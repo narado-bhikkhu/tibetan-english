@@ -1,0 +1,77 @@
+Changelog:
+
+Version 0.0.21:
+* Fixed bug with Tibetan unicode input on iPhone by using the default Apple on-screen keyboard.
+
+Version 0.0.20:
+* Added ITLR (Indo-Tibetan Lexical Resources) as new dictionary. Many thanks go to Dr. Orna Almogi, Prof. Kiyonori Nagasaki, and to all contributors of the ITLR project.
+* Fixed various input problems when using space and backspace on mobile devices such as Android phones
+* Fixed erroroneous wazur characters and a few other mistakes in Bod rgya tshig mdzod chen mo. Huge thanks to Valery Ushakov for contributing all these corrections!
+* Fixes of individual dictionary entries for various dictionaries. Many thanks to James Hartzell and Valery Ushakov
+* Changed all Sanskrit entries to use proper Harvard-Kyoto transliteration while searching. For example, jñāna must now be searched as jJAna while before it was a mix jNAna and jJAna depending on the source.
+ 
+Version 0.0.19:
+* Bugfixes for better backwards compatibility
+
+Version 0.0.18:
+* Added list of Tibetan abbreviations, Compiled, formatted and kindly shared by Bruno Lainé (http://www.rkts.org/)
+* Updated definition entries from the 84000 translation project (http://84000.co)
+* Bugfix: Terms containing various syllables with a-chung, such as ba'i and ba'o were not found. This should work now.
+* Bugfix: Corrected formatting of Tibetan-Sanskrit dictionary by Lokesh Chandra
+* Bugfix: On mobile phones, when jumping to the second part of the list of results, opening a dictionary entry and then jumping back to the list, the list does not anymore go back to the first page of results.
+* Online version only: added scanned dictionaries of Jäschke and Chandra Das
+
+Version 0.0.17:
+* Added Tibetan-Sanskrit dictionary by J. S. Negi
+* Added Tibetan-Sanskrit dictionary by Lokesh Chandra 
+
+Version 0.0.16:
+* Correction of backspace behavior for Android 10 and 11
+
+Version 0.0.15:
+* Better handling when characters are deleted: In that case we will now only delete the entire last syllable if we are on really old Android releases and the user had typed directly with a Tibetan keyboard
+* Added new English-Tibetan / Tibetan-English dictionary with modern scientific and economic terms: Tibetan Terminology Project: Glossary of Standardised Terms (Central Tibetan Administration)
+* Update jQuery to 3.5.1
+
+Version 0.0.14:
+* Bugfix: the setting to show all Tibetan text in Wylie transliteration should now work again
+* Add new Tibetan-Tibetan dictionary: Bod rgya tshig mdzod chen mo (1985, Mi dmangs dpe skrun khang, Beijing)
+* Better support for Android 10
+
+Version 0.0.13:
+* Fix for crashes of the application (especially when using the app in multi window mode but also in other situations)
+
+Version 0.0.12:
+* Correction for language switching icons Tib->En / En->Tib so that they are visible in dark mode as well
+
+Version 0.0.11:
+* New function to search for English terms: The app can now not only search for Tibetan terms, there is also a new mode to search for English terms and get their Tibetan equivalents.
+* Added new dictionary: Glossary from the 84000 translation project
+* Added an additional older version of Jefrey Hopkins' Tibetan-Sanskrit dictionary from 1992 because in the newer version from 2015 some Sanskrit entries are cut off.
+* Corrected problems in Rangjung Yeshe dictionary data that prevented a result from being shown. Only very few terms were affected by this.
+* Reduced the size of the database file by compressing the entries and optimizing the database structure
+* Updated to the latest development tools in order to support the latest Android versions up to 9.0 (Sadly, Android versions 4.0 to 4.3 are not supported anymore)
+* Removed dictionary database from the external SD card and placed it into app-internal folder instead for more complete uninstall behavior
+
+Version 0.0.10:
+* Added new dictionary: Tsepak Rigdzin - Tibetan-English Dictionary of Buddhist Terms
+* Fine tuning for Tibetan input:
+** an additional input mode is available via the settings where the input always remains in Wylie transliteration whereas all other Tibetan text is shown in Tibetan script. 
+** The input field does not get cleared anymore when clicking on it - instead there is an additional button to clear the input if desired.
+** Pressing Enter will remove the cursor from the input field which causes the on screen keyboard to be hidden on mobile devices
+* some very minor fixes of dictionary formatting
+
+Version 0.0.9:
+* Try to convince the Google Play Store that this App works just as well on tablets as it does on phones.
+
+Version 0.0.8:
+* Layout fix: reduce horizontal scrolling in the about-section
+* new verb dictionary added: "Verbinator" Tibetan Verb Dictionary (Verbinator 2000). Taken from: Hill, Nathan (2010) "A Lexicon of Tibetan Verb Stems as Reported by the Grammatical Tradition" (Munich: Bayerische Akademie der Wissenschaften). If you find this dictionary helpful, please buy the book version.
+* new glossary added - Tibetan and English terms from: "Buddhist Terms - Multilingual Version", Edited by Peter Gäng and Sylvia Wetzel, Buddhist Academy Berlin Brandenburg (June 2004)
+
+Version 0.0.7:
+* initial checkin on Github (including some cleanup of the build process)
+* New glossary added: "Common Chinese-Tibetan-Sanskrit-English Buddhist Terminology", Compiled by Chung-An Lin, assisted by Hou-Wha Wang (only the English and Tibetan terminology is incluced in the application so far). Thanks to the author for allowing this material to be added!
+* New dictionary added: dung-dkar-tshig-mdzod-chen-mo
+* Dictionary removed: bod-rgya tshig-mdzod chen-mo (Sorry, I cannnot include this dictionary for now. I will look if there is a way to add it again in the future).
+
